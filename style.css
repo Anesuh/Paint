@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d8d8d8;
+}
+
+canvas{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tool-box{
+    width: 110px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-left: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.button_tool, .button_size{
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_tool span{
+    font-size: 1.8rem;
+}
+
+.button_tool:hover, .button_size:hover{
+    background-color: #d8d8d8;
+}
+
+
+.input_color{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    padding: 7px;
+    background: none;
+}
+
+.input_color::-webkit-color-swatch {
+    border-radius: 50%;
+}
+
+.button_size{
+    padding: 10px;
+    height: auto;
+}
+
+.button_size span{
+    width: 100%;
+    border: none;
+    background: #000;
+    border-radius: 100px;
+    display: block;
+}
+
+.button_size[data-size="5"] span{
+    height: 5px;
+}
+
+.button_size[data-size="10"] span{
+    height: 10px;
+}
+
+.button_size[data-size="20"] span{
+    height: 15px;
+}
+
+.button_size[data-size="30"] span{
+    height: 20px;
+}
+
+.active{
+    background-color: #d8d8d8;
+}
